@@ -1,0 +1,3 @@
+node –v (For check the node install)
+npm install -g typescript (For Installation of Typescript)
+tsc –v (For check the typescript install)
