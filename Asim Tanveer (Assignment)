@@ -1,0 +1,322 @@
+install NodeJS througt Crome
+install VS Code Througt Crome
+Check Node js in CMD (node -v & npm -v)
+Intall Typescript in CMD(npm install -g typescript)
+window powershellISE (Set-ExecutionPolicy unrestricted)
+var personName = "Asim";
+console.log("Hello ".concat(personName, ", would you like to learn some TypeScript today?"));
+personName = "Asim";
+console.log("Lowercase: " + personName.toLowerCase());
+console.log("Uppercase: " + personName.toUpperCase());
+console.log("Titlecase: " + personName.replace(/\b\w/g, function (char) { return char.toUpperCase(); }));
+quote = "A person who never made a mistake never tried anything new.";
+author = "Albert Einstein";
+console.log("".concat(author, " once said, \"").concat(quote, "\""));
+var famous_person = "Albert Einstein";
+var message = "".concat(famous_person, " once said, \"A person who never made a mistake never tried anything new.\"");
+console.log(message);
+console.log(5 + 3);
+console.log(12 - 4);
+console.log(2 * 4);
+console.log(64 / 8);
+var favoriteNumber = 42;
+message = "My favorite number is ".concat(favoriteNumber, ".");
+console.log(message);
+var num1 = 5;
+var num2 = 3;
+var sum = num1 + num2; // Perform addition
+var difference = num1 - num2; // Perform subtraction
+console.log("Sum:", sum);
+console.log("Difference:", difference);
+var names = ["Ali", "Abdullah", "Mohsin", "Danish"];
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+var names = ["Ali", "Abdullah", "Mohsin", "Danish"];
+var message = "Hello, [name]! How are you doing today?";
+for (var i = 0; i < names.length; i++) {
+    var personalizedMessage = message.replace("[name]", names[i]);
+    console.log(personalizedMessage);
+}
+var favoriteMotorcycles = ["Honda", "Yamaha", "Ducati", "Kawasaki", "BMW"];
+favoriteMotorcycles.forEach(function (motorcycle) {
+    console.log("I would like to own a ".concat(motorcycle, " motorcycle."));
+});
+var guestList = ["Ali", "Boby", "Asim", "Danial", "Mohsin"];
+var guestWhoCantMakeIt = "Ali";
+var replacementGuest = "Bilal";
+var indexOfCancelledGuest = guestList.indexOf(guestWhoCantMakeIt);
+if (indexOfCancelledGuest !== -1) {
+    guestList[indexOfCancelledGuest] = replacementGuest;
+}
+console.log("Updated Guest List:");
+guestList.forEach(function (guest) {
+    console.log(guest);
+});
+var guestList = ["Ali", "Boby", "Asim", "Danial", "Mohsin"];
+var additionalGuests = ["kamran", "mehboob", "Hamza"];
+guestList = guestList.concat(additionalGuests);
+console.log("Updated Guest List:");
+guestList.forEach(function (guest) {
+    console.log(guest);
+});
+var placesToVisit = ["Turkey", "China", "Tokyo"];
+console.log("Places I'd like to visit:");
+placesToVisit.forEach(function (place, index) {
+    console.log("".concat(index + 1, ". ").concat(place));
+});
+var guestList = ["Ali", "Boby", "Asim", "Danial", "Mohsin"];
+var numberOfGuests = guestList.length;
+console.log("You are inviting ".concat(numberOfGuests, " people to dinner."));
+var programmingLanguages = ["JavaScript", "Python", "Java", "C#", "Ruby"];
+console.log("List of Programming Languages:");
+programmingLanguages.forEach(function (language) {
+    console.log(language);
+});
+var country1 = {
+    name: "United States",
+    capital: "Washington, D.C.",
+    population: 331002651,
+    language: "English"
+};
+var country2 = {
+    name: "Germany",
+    capital: "Berlin",
+    population: 83149300,
+    language: "German"
+};
+var country3 = {
+    name: "Japan",
+    capital: "Tokyo",
+    population: 126476461,
+    language: "Japanese"
+};
+console.log("Information about Countries:");
+console.log(country1);
+console.log(country2);
+console.log(country3);
+var numbers = [1, 2, 3, 4, 5];
+var index = 10; // Intentionally set an out-of-bounds index
+try {
+    var value = numbers[index];
+    console.log("Value at index", index, ":", value);
+}
+catch (error) {
+    console.error("Error:", error.message);
+}
+finally {
+    console.log("Correcting the error...");
+}
+// Variables for testing
+var x = 10;
+var y = 5;
+var name = "John";
+var age = 25;
+var isStudent = true;
+// Conditional tests
+console.log("Conditional Tests:");
+// Test 1
+console.log("Test 1: x > y");
+console.log("Prediction: true");
+console.log("Result:", x > y);
+// Test 2
+console.log("Test 2: name === 'John'");
+console.log("Prediction: true");
+console.log("Result:", name === "John");
+// Test 3
+console.log("Test 3: age < 18");
+console.log("Prediction: false");
+console.log("Result:", age < 18);
+// Test 4
+console.log("Test 4: y >= 5 && isStudent");
+console.log("Prediction: true");
+console.log("Result:", y >= 5 && isStudent);
+// Test 5
+console.log("Test 5: x === 5 || age === 20");
+console.log("Prediction: false");
+console.log("Result:", x === 5 || age === 20);
+var alienColor = 'green';
+console.log("Alien Color:", alienColor);
+var alienColor = 'green';
+if (alienColor === 'green') {
+    console.log("You earned 5 points for shooting down the green alien!");
+}
+else if (alienColor === 'yellow') {
+    console.log("You earned 10 points for shooting down the yellow alien!");
+}
+else if (alienColor === 'red') {
+    console.log("You earned 15 points for shooting down the red alien!");
+}
+else {
+    console.log("Invalid alien color.");
+}
+var age = 32;
+if (age < 0) {
+    console.log("Invalid age. Please provide a positive value.");
+}
+else if (age < 2) {
+    console.log("You are in the infancy stage of life.");
+}
+else if (age < 13) {
+    console.log("You are in the childhood stage of life.");
+}
+else if (age < 20) {
+    console.log("You are in the teenage stage of life.");
+}
+else if (age < 65) {
+    console.log("You are in the adulthood stage of life.");
+}
+else {
+    console.log("You are in the senior stage of life.");
+}
+var favoriteFruits = ["banana", "apple", "mango"];
+if (favoriteFruits.includes("banana")) {
+    console.log("You really like bananas!");
+}
+if (favoriteFruits.includes("apple")) {
+    console.log("You really like apples!");
+}
+if (favoriteFruits.includes("mango")) {
+    console.log("You really like mangoes!");
+}
+if (favoriteFruits.includes("strawberry")) {
+    console.log("You really like strawberries!");
+}
+if (favoriteFruits.includes("grape")) {
+    console.log("You really like grapes!");
+}
+var usernames = ["admin", "Asim", "Mohsin", "Ali", "Malik"];
+for (var _i = 0, usernames_1 = usernames; _i < usernames_1.length; _i++) {
+    var username = usernames_1[_i];
+    if (username === "admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log("Hello ".concat(username, ", thank you for logging in again."));
+    }
+}
+var currentUsers = ["Ali", "Asim", "Ammar"];
+var newUsers = ["emman", "Mohsin", "jawwad"];
+var _loop_1 = function (newUser) {
+    var isUsernameTaken = currentUsers.some(function (username) { return username.toLowerCase() === newUser.toLowerCase(); });
+    if (isUsernameTaken) {
+        console.log("Sorry, the username '".concat(newUser, "' is already taken. Please enter a new username."));
+    }
+    else {
+        console.log("The username '".concat(newUser, "' is available."));
+    }
+};
+for (var _a = 0, newUsers_1 = newUsers; _a < newUsers_1.length; _a++) {
+    var newUser = newUsers_1[_a];
+    _loop_1(newUser);
+}
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var _b = 0, numbers_1 = numbers; _b < numbers_1.length; _b++) {
+    var number = numbers_1[_b];
+    var ordinalEnding = void 0;
+    if (number === 1) {
+        ordinalEnding = "st";
+    }
+    else if (number === 2) {
+        ordinalEnding = "nd";
+    }
+    else if (number === 3) {
+        ordinalEnding = "rd";
+    }
+    else {
+        ordinalEnding = "th";
+    }
+    console.log("".concat(number).concat(ordinalEnding));
+}
+var favoritePizzas = ["Margherita", "Pepperoni", "Hawaiian"];
+for (var _c = 0, favoritePizzas_1 = favoritePizzas; _c < favoritePizzas_1.length; _c++) {
+    var pizza = favoritePizzas_1[_c];
+    console.log("I like ".concat(pizza, " pizza."));
+}
+console.log("Pizza is one of my favorite foods. I really love pizza!");
+var animals = ["dog", "cat", "rabbit"];
+for (var _d = 0, animals_1 = animals; _d < animals_1.length; _d++) {
+    var animal = animals_1[_d];
+    console.log(animal);
+}
+console.log();
+for (var _e = 0, animals_2 = animals; _e < animals_2.length; _e++) {
+    var animal = animals_2[_e];
+    console.log("A ".concat(animal, " would make a great pet."));
+}
+console.log();
+console.log("These animals have in common that they are popular choices as pets. Any of these animals would make a great pet!");
+function make_shirt(size, message) {
+    console.log("The shirt size is ".concat(size, ". The message printed on the shirt is: \"").concat(message, "\"."));
+}
+make_shirt("L", "I love coding!");
+function make_shirt(size, message) {
+    if (size === void 0) { size = "large"; }
+    if (message === void 0) { message = "I love TypeScript"; }
+    console.log("The shirt size is ".concat(size, ". The message printed on the shirt is: \"").concat(message, "\"."));
+}
+make_shirt(); // Large shirt with default message
+make_shirt("medium"); // Medium shirt with default message
+make_shirt("small", "Custom message"); // Custom-sized shirt with custom message
+function describe_city(city, country) {
+    if (country === void 0) { country = "USA"; }
+    console.log("".concat(city, " is in ").concat(country, "."));
+}
+describe_city("Karachi", "Pakistan");
+describe_city("New York");
+describe_city("Sydney", "Australia");
+function make_album(artist, album, tracks) {
+    var albumObject = {
+        artist: artist,
+        album: album,
+    };
+    if (tracks !== undefined) {
+        albumObject.tracks = tracks;
+    }
+    return albumObject;
+}
+var album1 = make_album("Ed Sheeran", "Divide");
+var album2 = make_album("Taylor Swift", "1989", 16);
+var album3 = make_album("Imagine Dragons", "Night Visions", 12);
+console.log(album1);
+console.log(album2);
+console.log(album3);
+function show_magicians(magicians) {
+    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
+        var magician = magicians_1[_i];
+        console.log(magician);
+    }
+}
+var magicianNames = ["Asim", "Ali", "Babar", "Mohsin"];
+show_magicians(magicianNames);
+function make_sandwich() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    console.log("Sandwich Summary:");
+    console.log("Bread +", items.join(" + "), "+ Bread");
+    console.log();
+}
+make_sandwich("Ham", "Cheese");
+make_sandwich("Turkey", "Lettuce", "Tomato");
+make_sandwich("Peanut Butter", "Jelly", "Banana", "Honey");
+function store_car_info(manufacturer, model) {
+    var kwargs = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        kwargs[_i - 2] = arguments[_i];
+    }
+    var carInfo = {
+        manufacturer: manufacturer,
+        model: model,
+    };
+    for (var _a = 0, kwargs_1 = kwargs; _a < kwargs_1.length; _a++) {
+        var arg = kwargs_1[_a];
+        var key = Object.keys(arg)[0];
+        var value = arg[key];
+        carInfo[key] = value;
+    }
+    return carInfo;
+}
+var car = store_car_info("toyota", "Model corolla 2023", { color: "Red" }, { optionalFeature: "Autopilot" });
+console.log(car);
